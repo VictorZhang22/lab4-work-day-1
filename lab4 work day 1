@@ -1,22 +1,22 @@
 def fineMultiply():
-    x = 0
-    for number in range(1, 1000):
-        if number % 3 == 0 or number % 5 == 0:
-            x = x + number
-    print(x)
+    x = 0 #an integer to add the numbers to
+    for number in range(1, 1000): #for loop going from 0 - 1000
+        if number % 3 == 0 or number % 5 == 0: #find numbers that are eligible
+            x = x + number #add the eligible numbers to the integer I created earlier
+    print(x) #print the sum
 
 def calculate():
-    sumOfEven = 0
-    x = 1
-    y = 2
-    while y <= 4000000:
-        if y % 2 == 0:
-            sumOfEven += y
-        y += x
-        x = y - x
-    return sumOfEven
+    sumOfEven = 0 # an integer to add the numbers to
+    x = 1 #previous number in the sequence
+    y = 2 #current number in the sequence
+    while y <= 4000000: #while loop to keep the maximum under 4 million
+        if y % 2 == 0: #to find the even numbers
+            sumOfEven += y #add the even numbers to the integer
+        y += x #create the next "current number"
+        x = y - x #create the next "previous number"
+    return sumOfEven #return the results 
 
-def largestPrime(num):
+#def largestPrime(num):
     
 
 if __name__ == "__main__":
